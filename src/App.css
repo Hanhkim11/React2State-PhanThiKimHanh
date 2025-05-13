@@ -41,15 +41,6 @@
   color: #888;
 } */
 
-/* /* .bgIMG {
-  position: relative;
-  background-size: full;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: full
-} */
-
 .backgroundIMG {
   position: relative;
 }
@@ -64,4 +55,17 @@
 
 .bg {
   background-color: rgb(237, 168, 94);
+}
+
+.glassesModel {
+  position: relative;
+}
+
+.glassesList {
+  position: absoulte;
+}
+
+.glassesPicture {
+  width: 250px;
+  height: 200px;
 }

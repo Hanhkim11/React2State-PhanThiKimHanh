@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 const BTState = () => {
+  const [glassesList, setGlassesList] = useState("./public/img/g1.jpg");
+  const handleChangeGlasses = (glasses) => {
+    let img = `./public/img/${glasses}.jpg`;
+    setGlassesList(img);
+  };
   return (
     <div>
       <div className="backgroundIMG">
@@ -15,8 +20,18 @@ const BTState = () => {
             </span>
           </div>
 
-          <div className="">
-            <img src="./public/img/model.jpg" alt="" />
+          <div>
+            <div className="glassesModel">
+              <img src="./public/img/model.jpg" alt="Model" />
+
+              <div className="glassesList">
+                <img
+                  className="glassesPicture"
+                  src={glassesList}
+                  alt="Glasses picture"
+                />
+              </div>
+            </div>
             <div
               className="bg px-2"
               style={{ width: "480px", height: "150px" }}
@@ -33,33 +48,72 @@ const BTState = () => {
             className="bg-primary-subtle d-flex justify-content-center align-items-center"
             style={{ width: "800px", height: "100px" }}
           >
-            <button type="button" class="btn btn-outline-primary">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              Secondary
-            </button>
-            <button type="button" class="btn btn-outline-success">
-              Success
-            </button>
-            <button type="button" class="btn btn-outline-danger">
-              Danger
-            </button>
-            <button type="button" class="btn btn-outline-warning">
-              Warning
-            </button>
-            <button type="button" class="btn btn-outline-info">
-              Info
-            </button>
-            <button type="button" class="btn btn-outline-primary">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              Secondary
-            </button>
-            <button type="button" class="btn btn-outline-dark">
-              Dark
-            </button>
+            <div>
+              <button
+                className="btn btn-outline-primary"
+                onClick={() => {
+                  handleChangeGlasses("g2");
+                }}
+              >
+                Primary
+              </button>
+              <button
+                className="btn btn-outline-secondary"
+                onClick={() => {
+                  handleChangeGlasses("g3");
+                }}
+              >
+                Secondary
+              </button>
+              <button
+                className="btn btn-outline-success"
+                onClick={() => {
+                  handleChangeGlasses("g4");
+                }}
+              >
+                Success
+              </button>
+              <button
+                className="btn btn-outline-danger"
+                onClick={() => {
+                  handleChangeGlasses("g5");
+                }}
+              >
+                Danger
+              </button>
+              <button
+                className="btn btn-outline-warning"
+                onClick={() => {
+                  handleChangeGlasses("g6");
+                }}
+              >
+                Warning
+              </button>
+              <button
+                className="btn btn-outline-info"
+                onClick={() => {
+                  handleChangeGlasses("g7");
+                }}
+              >
+                Info
+              </button>
+              <button
+                className="btn btn-outline-primary"
+                onClick={() => {
+                  handleChangeGlasses("g8");
+                }}
+              >
+                Primary
+              </button>
+              <button
+                className="btn btn-outline-secondary"
+                onClick={() => {
+                  handleChangeGlasses("g9");
+                }}
+              >
+                Secondary
+              </button>
+            </div>
           </div>
         </div>
       </div>
