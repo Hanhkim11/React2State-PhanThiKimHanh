@@ -41,37 +41,27 @@
   color: #888;
 } */
 
-.bgIMG {
+/* /* .bgIMG {
   position: relative;
   background-size: full;
   background-position: center;
   background-repeat: no-repeat;
   height: 200px;
   width: full
+} */
+
+.backgroundIMG {
+  position: relative;
 }
 
-.bodyIMG {
-  position: absoulute;
-}
-
-.header {
-  position: absoulute;
+.container-fluid {
+  position: absoulte;
 }
 
 .title-text {
   color: rgb(147, 112, 219);
 }
 
-.card-body {
+.bg {
   background-color: rgb(237, 168, 94);
 }
-
-.hinhAnh {
-  position: absoulute
-  width: 400px;
-  height: 100px;
-}
-
-/* .glassList{
-  position: absoulute
-} */
