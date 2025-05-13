@@ -2,7 +2,7 @@ import React from "react";
 
 const Background = () => {
   return (
-    <div className=" bgIMG" style={{ width: "100" }}>
+    <div className=" bgIMG">
       <img src="./public/img/background.jpg" alt="" />
     </div>
   );

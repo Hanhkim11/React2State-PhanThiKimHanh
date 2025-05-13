@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Body from "./Body";
 import Background from "./Background";
-import Matkinh from "./Matkinh";
+import GlassList from "./GlassList";
 
 const BaiTapState = () => {
   return (
@@ -10,7 +10,7 @@ const BaiTapState = () => {
       <Background />
       <Header />
       <Body />
-      <Matkinh />
+      <GlassList />
     </div>
   );
 };
