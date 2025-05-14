@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 const BTState = () => {
-  const [glassesList, setGlassesList] = useState("./public/img/g1.jpg");
+  const [glassesList, setGlassesList] = useState("./public/img/v1.png");
+
   const handleChangeGlasses = (glasses) => {
-    let img = `./public/img/${glasses}.jpg`;
+    let img = `./public/img/${glasses}.png`;
     setGlassesList(img);
   };
   return (
@@ -24,96 +25,138 @@ const BTState = () => {
             <div className="glassesModel">
               <img src="./public/img/model.jpg" alt="Model" />
 
-              <div className="glassesList">
-                <img
-                  className="glassesPicture"
-                  src={glassesList}
-                  alt="Glasses picture"
-                />
+              <img
+                className="glassesPicture"
+                src={glassesList}
+                alt="Glasses picture"
+              />
+              <div
+                className="bg px-2"
+                style={{ width: "480px", height: "150px" }}
+              >
+                <h3 className="title-text pt-3">FENDI F8750</h3>
+                <p className="text-light">
+                  Light pink square lenses define these sunglasses, ending with
+                  amother of pearl effect tip.
+                </p>
               </div>
-            </div>
-            <div
-              className="bg px-2"
-              style={{ width: "480px", height: "150px" }}
-            >
-              <h3 className="title-text pt-3">FENDI F8750</h3>
-              <p className="text-light">
-                Light pink square lenses define these sunglasses, ending with
-                amother of pearl effect tip.
-              </p>
             </div>
           </div>
 
           <div
-            className="bg-primary-subtle d-flex justify-content-center align-items-center"
+            className="bg-primary-subtle d-flex justify-content-center align-items-center mt-5"
             style={{ width: "800px", height: "100px" }}
           >
-            <div>
-              <button
-                className="btn btn-outline-primary"
-                onClick={() => {
-                  handleChangeGlasses("g2");
-                }}
-              >
-                Primary
-              </button>
-              <button
-                className="btn btn-outline-secondary"
-                onClick={() => {
-                  handleChangeGlasses("g3");
-                }}
-              >
-                Secondary
-              </button>
-              <button
-                className="btn btn-outline-success"
-                onClick={() => {
-                  handleChangeGlasses("g4");
-                }}
-              >
-                Success
-              </button>
-              <button
-                className="btn btn-outline-danger"
-                onClick={() => {
-                  handleChangeGlasses("g5");
-                }}
-              >
-                Danger
-              </button>
-              <button
-                className="btn btn-outline-warning"
-                onClick={() => {
-                  handleChangeGlasses("g6");
-                }}
-              >
-                Warning
-              </button>
-              <button
-                className="btn btn-outline-info"
-                onClick={() => {
-                  handleChangeGlasses("g7");
-                }}
-              >
-                Info
-              </button>
-              <button
-                className="btn btn-outline-primary"
-                onClick={() => {
-                  handleChangeGlasses("g8");
-                }}
-              >
-                Primary
-              </button>
-              <button
-                className="btn btn-outline-secondary"
-                onClick={() => {
-                  handleChangeGlasses("g9");
-                }}
-              >
-                Secondary
-              </button>
-            </div>
+            <button
+              className="btn btn-outline-primary"
+              onClick={() => {
+                handleChangeGlasses("v2");
+              }}
+            >
+              <img
+                className=""
+                style={{ width: "80px", height: "40px" }}
+                src="./public/img/v2.png"
+                alt=""
+              />
+            </button>
+
+            <button
+              className="btn btn-outline-secondary"
+              onClick={() => {
+                handleChangeGlasses("v3");
+              }}
+            >
+              <img
+                className=""
+                style={{ width: "80px", height: "40px" }}
+                src="./public/img/v3.png"
+                alt=""
+              />
+            </button>
+
+            <button
+              className="btn btn-outline-success"
+              onClick={() => {
+                handleChangeGlasses("v4");
+              }}
+            >
+              <img
+                className=""
+                style={{ width: "80px", height: "40px" }}
+                src="./public/img/v4.png"
+                alt=""
+              />
+            </button>
+
+            <button
+              className="btn btn-outline-danger"
+              onClick={() => {
+                handleChangeGlasses("v5");
+              }}
+            >
+              <img
+                className=""
+                style={{ width: "80px", height: "40px" }}
+                src="./public/img/v5.png"
+                alt=""
+              />
+            </button>
+
+            <button
+              className="btn btn-outline-warning"
+              onClick={() => {
+                handleChangeGlasses("v6");
+              }}
+            >
+              <img
+                className=""
+                style={{ width: "80px", height: "40px" }}
+                src="./public/img/v6.png"
+                alt=""
+              />
+            </button>
+
+            <button
+              className="btn btn-outline-info"
+              onClick={() => {
+                handleChangeGlasses("v7");
+              }}
+            >
+              <img
+                className=""
+                style={{ width: "80px", height: "40px" }}
+                src="./public/img/v7.png"
+                alt=""
+              />
+            </button>
+
+            <button
+              className="btn btn-outline-primary"
+              onClick={() => {
+                handleChangeGlasses("v8");
+              }}
+            >
+              <img
+                className=""
+                style={{ width: "80px", height: "40px" }}
+                src="./public/img/v8.png"
+                alt=""
+              />
+            </button>
+            <button
+              className="btn btn-outline-secondary"
+              onClick={() => {
+                handleChangeGlasses("v9");
+              }}
+            >
+              <img
+                className=""
+                style={{ width: "80px", height: "40px" }}
+                src="./public/img/v9.png"
+                alt=""
+              />
+            </button>
           </div>
         </div>
       </div>
